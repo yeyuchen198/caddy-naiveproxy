@@ -4,9 +4,7 @@
   order forward_proxy before file_server
 }
 :15730, *.yuchen168.tk:15730 {  
-  tls {
-        dns cloudflare 67a4cf39b7187c0a1eb22aa3ef22d05bcf36a
-  }
+  tls /tmp/caddy-forwardproxy-naive/yuchen168.tk.pem /tmp/caddy-forwardproxy-naive/yuchen168.tk.key
   forward_proxy {
     basic_auth user_is_yuchen password 
     hide_ip
