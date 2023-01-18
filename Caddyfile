@@ -1,10 +1,10 @@
 {
   order forward_proxy before file_server
 }
-:1573, naive.yuchen168.tk:1573 {    // ***
+:1573, naive.yuchen168.tk:1573 {  
   tls e16d9cb045d7@gmail.com
   forward_proxy {
-    basic_auth user_is_yuchen password   // ***
+    basic_auth user_is_yuchen password 
     hide_ip
     hide_via
     probe_resistance
