@@ -1,10 +1,10 @@
 {
   http_port 1456
-  https_port 1573
+  https_port 15730
   order forward_proxy before file_server
 }
-:1573, naive.yuchen168.tk:15730 {  
-  tls /tmp/caddy-forwardproxy-naive/yuchen168.tk.pem /tmp/caddy-forwardproxy-naive/yuchen168.tk.key
+:15730, *.yuchen168.tk:15730 {  
+  tls {       dns cloudflare 67a4cf39b7187c0a1eb22aa3ef22d05bcf36a    }
   forward_proxy {
     basic_auth user_is_yuchen password 
     hide_ip
