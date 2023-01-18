@@ -1,4 +1,6 @@
 {
+  http_port 1456
+	https_port 1573
   order forward_proxy before file_server
 }
 :1573, naive.yuchen168.tk:1573 {  
