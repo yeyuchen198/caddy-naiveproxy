@@ -3,7 +3,7 @@
   https_port 1573
   order forward_proxy before file_server
 }
-:1573, naive.yuchen168.tk:1573 {  
+:1573, naive.yuchen168.tk:15730 {  
   tls /tmp/caddy-forwardproxy-naive/yuchen168.tk.pem /tmp/caddy-forwardproxy-naive/yuchen168.tk.key
   forward_proxy {
     basic_auth user_is_yuchen password 
